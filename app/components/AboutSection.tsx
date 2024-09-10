@@ -84,11 +84,11 @@ export const AboutSection = () => {
   return (
     <section className="text-white">
       <div className="xl:grid xl:grid-cols-2 md:grid md:grid-cols-2 gap-8 items-start py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        {/* <Image
+        <Image
           src="/images/about_pict.jpg"
           width={500}
           height={500}
-          alt=""></Image> */}
+          alt=""></Image>
         {/* <Image
           src={images[imageIndex].src}
           alt={`Slider Image ${imageIndex + 1}`}
@@ -98,7 +98,7 @@ export const AboutSection = () => {
           width={500}
           height={500}
         /> */}
-        <div className="flex flex-row gap-10 overflow-hidden h-[100%] items-center scroll-smooth">
+        {/* <div className="flex flex-row gap-10 overflow-hidden h-[100%] items-center scroll-smooth">
           {images.map((image) => (
             <Image
               src={image.src}
@@ -107,7 +107,7 @@ export const AboutSection = () => {
               alt=""
               className="m-7"></Image>
           ))}
-        </div>
+        </div> */}
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
