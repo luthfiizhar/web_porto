@@ -10,7 +10,7 @@ export const HeroSection = () => {
         <div className="col-span-7 place-self-center text-center sm:text-left lg:text-left w-full">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-700">
-              Hello, i am{""}
+              Hello, i'm{""}
             </span>
             <br />
           </h1>
