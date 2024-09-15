@@ -5,12 +5,12 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
-    remotePatterns: {
-      protocol: "https",
-      hostname: "luthfiizhar.github.io/web_porto/",
-      port: "",
-      pathname: "/images/**",
-    },
+    // remotePatterns: {
+    //   protocol: "https",
+    //   hostname: "luthfiizhar.github.io/web_porto/",
+    //   port: "",
+    //   pathname: "/images/**",
+    // },
   },
 };
 
