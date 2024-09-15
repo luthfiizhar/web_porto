@@ -22,13 +22,13 @@ const Photo = () => {
             },
           }}>
           <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute mix-blend-lighten">
-            <img
+            <Image
               src={"/images/photo_new.png"}
               priority
               quality={100}
               fill
               alt=""
-              className="rounded-full object-contain"></img>
+              className="rounded-full object-contain"></Image>
           </div>
         </motion.div>
 
