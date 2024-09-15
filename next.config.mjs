@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/resume",
+  basePath: "/web_porto",
   output: "export",
   reactStrictMode: true,
   images: [
@@ -9,7 +9,7 @@ const nextConfig = {
     },
     {
       protocol: "https",
-      hostname: "luthfiizhar.github.io/resume/",
+      hostname: "luthfiizhar.github.io/web_porto/",
       port: "",
       pathname: "/images/**",
     },
