@@ -5,6 +5,8 @@ const nextConfig = {
   reactStrictMode: true,
   images: {
     unoptimized: true,
+    loader: "custom",
+    loaderFile: "./loader.js",
     // remotePatterns: {
     //   protocol: "https",
     //   hostname: "luthfiizhar.github.io/web_porto/",
