@@ -2,7 +2,7 @@
 const nextConfig = {
   basePath: "/web_porto",
   output: "export",
-  // reactStrictMode: true,
+  reactStrictMode: true,
 };
 
 export default nextConfig;
