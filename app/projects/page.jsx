@@ -75,7 +75,7 @@ const projects = [
     description:
       "Web base application for book a meeting room with save event to personal calendar feature.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }],
-    image: "/web_porto/images/projects/MRBS.png",
+    image: "/web_porto/images/projects/mrbs.png",
     live: "",
     github: "",
   },
@@ -87,7 +87,7 @@ const projects = [
     description:
       "Web base application to do monthly order supplies and settle order supplies for retail store under Kawan Lama Group.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }, { name: "Firebase" }],
-    image: "/web_porto/images/projects/GADS.png",
+    image: "/web_porto/images/projects/gads.png",
     live: "",
     github: "",
   },
@@ -109,7 +109,7 @@ const projects = [
     description:
       "Event monitoring for Facility Mangement Dept. Kawan Lama Group.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }],
-    image: "/web_porto/images/projects/FMEventList.png",
+    image: "/web_porto/images/projects/FmEventList.png",
     live: "",
     github: "",
   },
