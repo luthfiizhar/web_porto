@@ -23,7 +23,7 @@ const Photo = () => {
           }}>
           <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute mix-blend-lighten">
             <Image
-              src={"/images/photo_new.png"}
+              src={"/web_porto/images/photo_new.png"}
               priority
               quality={100}
               fill
