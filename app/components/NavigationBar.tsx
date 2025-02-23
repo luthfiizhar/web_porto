@@ -39,7 +39,7 @@ export const NavigationBar = () => {
             Izhrmn<span className="text-accent">.</span>
           </h1>
         </Link>
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden lg:flex xl:flex items-center gap-8">
           <Nav></Nav>
           <Link href="/contact">
             <Button>Hire Me</Button>

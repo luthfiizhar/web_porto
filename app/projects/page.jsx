@@ -26,7 +26,14 @@ const projects = [
     title: "Absensi Online",
     description: "Attendance application using face matching API.",
     stack: [{ name: "Flutter" }, { name: "Python" }, { name: "PostgreSQL" }],
-    image: "/web_porto/images/projects/absensi.png",
+    image: "/images/projects/absensi.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/absensi.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -43,7 +50,14 @@ const projects = [
       { name: "CodeIgniter" },
       { name: "PostgreSQL" },
     ],
-    image: "/web_porto/images/projects/EMR.png",
+    image: "/images/projects/EMR.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/EMR.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -53,7 +67,14 @@ const projects = [
     title: "Visitor Management System",
     description: "Web base application for invite visitor to Head Office.",
     stack: [{ name: "Flutter" }],
-    image: "/web_porto/images/projects/VMS.png",
+    image: "/images/projects/VMS.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/VMS.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -64,7 +85,14 @@ const projects = [
     description:
       "Kiosk device for visitor registration at Head Office reception",
     stack: [{ name: "Flutter" }, { name: "Java" }],
-    image: "/web_porto/images/projects/VMSKiosk.png",
+    image: "/images/projects/VMSKiosk.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/VMSKiosk.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -75,7 +103,14 @@ const projects = [
     description:
       "Web base application for book a meeting room with save event to personal calendar feature.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }],
-    image: "/web_porto/images/projects/mrbs.png",
+    image: "/images/projects/mrbs.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/mrbs.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -87,7 +122,14 @@ const projects = [
     description:
       "Web base application to do monthly order supplies and settle order supplies for retail store under Kawan Lama Group.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }, { name: "Firebase" }],
-    image: "/web_porto/images/projects/gads.png",
+    image: "/images/projects/gads.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/gads.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -98,7 +140,14 @@ const projects = [
     description:
       "Mobile application used for support Property/Building officer activity.",
     stack: [{ name: "Flutter" }, { name: "Java" }, { name: "Firebase" }],
-    image: "/web_porto/images/projects/PropManMobile.png",
+    image: "/images/projects/PropManMobile.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/PropManMobile.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -109,7 +158,14 @@ const projects = [
     description:
       "Event monitoring for Facility Mangement Dept. Kawan Lama Group.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }],
-    image: "/web_porto/images/projects/FmEventList.png",
+    image: "/images/projects/FmEventList.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/FmEventList.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -120,7 +176,14 @@ const projects = [
     description:
       "Web base application version for Property Management App. Used by supervisor to make schedule and task and have more dashboard feature.",
     stack: [{ name: "Flutter" }, { name: "JavaScript" }, { name: "Firebase" }],
-    image: "/web_porto/images/projects/PropManWeb.png",
+    image: "/images/projects/PropManWeb.png",
+    imageProps: (
+      <Image
+        src={"/images/projects/PropManWeb.png"}
+        fill
+        className="object-cover rounded-xl"
+        alt=""></Image>
+    ),
     live: "",
     github: "",
   },
@@ -215,12 +278,7 @@ const Work = () => {
                     <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-xl">
                       <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10 rounded-xl"></div>
                       <div className="relative w-full h-full object-contain rounded-xl">
-                        <Image
-                          src={project.image}
-                          fill
-                          sizes="w-full h-full"
-                          className="object-cover rounded-xl"
-                          alt=""></Image>
+                        {item.imageProps}
                       </div>
                     </div>
                   </SwiperSlide>

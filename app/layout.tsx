@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
-import Head from "next/head";
 import "./globals.css";
 
 import NavigationBar from "./components/NavigationBar";
 import PageTransition from "./components/PageTransition";
 import StairTransition from "./components/StairTransition";
+import { Toaster } from "@/components/ui/toaster";
 
 const jetBrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -25,13 +25,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </Head>
       <body className={jetBrainsMono.className}>
         <NavigationBar></NavigationBar>
         <StairTransition></StairTransition>
         <PageTransition>{children}</PageTransition>
+        <Toaster />
       </body>
     </html>
   );

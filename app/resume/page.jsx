@@ -32,8 +32,7 @@ import {
 
 const about = {
   title: "About me",
-  description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos voluptatibus quisquam eaque odit ipsam id eos molestiae porro",
+  description: "",
   info: [
     {
       fieldName: "Name",
@@ -70,7 +69,7 @@ const experience = {
   icon: "",
   title: "My Experience",
   description:
-    "I am a Software Developer with over 6 years of experience, specializing in building web and mobile applications using Dart/Flutter, JavaScript, and HTML/CSS. I began my career as an IT Engineer at PT. Infiniti Putera Omega (2018-2020), where I developed and maintained IT systems. Later, I move to Software Developer Division as Full Stack Developer at the same company (2020-2022), gaining experience in both front-end and back-end development using PHP and Python. Currently, I work as a Front-End Developer at Kawan Lama Group Corp. (2022-present), focusing on delivering responsive and optimized user experiences.",
+    "Experienced Software Developer specializing in building web and mobile applications using Dart/Flutter, JavaScript, and HTML/CSS. I began my career as an IT Engineer at PT. Infiniti Putera Omega, where I developed and maintained IT systems, ensuring optimal performance and security. I then transitioned to the Software Developer Division as a Full Stack Developer, gaining hands-on experience in both front-end and back-end development using PHP and Python. Currently, I am a Front-End Developer at Kawan Lama Group Corp., where I focus on delivering responsive, user-centric experiences and optimizing web application performance.",
   items: [
     {
       company: "Kawan Lama Group Corp.",
@@ -110,7 +109,7 @@ const education = {
 const skills = {
   title: "My Skills",
   description:
-    "I possess strong expertise in front-end technologies, including HTML, CSS, and JavaScript, enabling me to create responsive, user-friendly interfaces for web applications. I am proficient in Flutter, which I use for building cross-platform mobile applications. Additionally, I have experience with back-end development using PHP and Python, allowing me to integrate full-stack solutions. My diverse skill set enables me to deliver high-quality, end-to-end applications, with a focus on performance and user experience.",
+    "I possess strong expertise in front-end technologies, including HTML, CSS, and JavaScript, enabling me to create responsive and user-friendly interfaces for web applications. I am highly proficient in Flutter for building cross-platform mobile applications with seamless performance. Additionally, my experience in back-end development using PHP and Python allows me to deliver integrated full-stack solutions. This diverse skill set empowers me to create high-quality, end-to-end applications with a strong focus on performance optimization and exceptional user experiences.",
   list: [
     { icon: <FaHtml5 />, name: "HTML 5" },
     { icon: <FaCss3 />, name: "CSS 5" },

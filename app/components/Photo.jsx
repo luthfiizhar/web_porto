@@ -21,14 +21,14 @@ const Photo = () => {
               ease: "easeInOut",
             },
           }}>
-          <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute mix-blend-lighten">
+          <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute rounded-full mix-blend-lighten">
             <Image
-              src={"/web_porto/images/photo_new.png"}
+              src={"/images/photo_new.png"}
               priority
               quality={100}
               fill
               alt=""
-              className="rounded-full object-contain"></Image>
+              className="rounded-full object-contain mix-blend-darken"></Image>
           </div>
         </motion.div>
 

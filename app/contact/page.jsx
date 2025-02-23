@@ -3,6 +3,9 @@
 import { Button } from "../components/ui/button";
 import { Input } from "../components/ui/input";
 import { Textarea } from "../components/ui/textarea";
+import { useToast } from "@/hooks/use-toast";
+import { useRef } from "react";
+import { FormEvent } from "react";
 
 import {
   Select,
@@ -37,6 +40,29 @@ const info = [
 ];
 
 const Contact = () => {
+  const { toast } = useToast();
+  const ref = useRef(null);
+  async function handleSubmit(event) {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    const response = await fetch("/api/mail", {
+      method: "post",
+      body: formData,
+    });
+
+    const data = await response.json();
+
+    if (data["status"] === 200) {
+      toast({
+        title: "Form submitted",
+        description: "Your form has been sent.",
+      });
+      // ref.current?.reset();
+    }
+  }
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -49,7 +75,10 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           {/* Form */}
           <div className="xl:h-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              ref={ref}
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               {/* <p className="text-white/60">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quam
@@ -57,12 +86,35 @@ const Contact = () => {
               </p> */}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email" />
-                <Input type="phone" placeholder="Phone Number" />
+                <Input
+                  type="firstname"
+                  id="first_name"
+                  name="first_name"
+                  placeholder="Firstname"
+                  required
+                />
+                <Input
+                  type="lastname"
+                  id="last_name"
+                  name="last_name"
+                  placeholder="Lastname"
+                />
+                <Input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                  required
+                />
+                <Input
+                  type="phone"
+                  id="phone_number"
+                  name="phone_number"
+                  placeholder="Phone Number"
+                  required
+                />
               </div>
-
+              {/* 
               <Select>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
@@ -75,9 +127,11 @@ const Contact = () => {
                     <SelectItem value="solution">IT Solution</SelectItem>
                   </SelectGroup>
                 </SelectContent>
-              </Select>
+              </Select> */}
               <Textarea
                 className="h-[200px]"
+                id="message"
+                name="message"
                 placeholder="Type your message here."
               />
               <Button size="md" className="max-w-40">
