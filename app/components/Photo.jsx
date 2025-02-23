@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import photo from "@/public/images/photo_new.png";
 
 const Photo = () => {
   return (
@@ -23,7 +24,7 @@ const Photo = () => {
           }}>
           <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] absolute rounded-full mix-blend-lighten">
             <Image
-              src={"/images/photo_new.png"}
+              src={photo}
               priority
               quality={100}
               fill

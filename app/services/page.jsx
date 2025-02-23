@@ -11,7 +11,7 @@ const services = [
     title: "Web Development",
     description:
       "Focus on crafting responsive, high-performing, and user-friendly web application. ",
-    image: "/images/web_dev.png",
+    image: "/web_porto/images/web_dev.png",
     href: "/services",
   },
   {
@@ -19,7 +19,7 @@ const services = [
     title: "Mobile Development",
     description:
       "Build high-performance mobile application with seamless user experience across all devices. Available to develop cross-platform mobile application",
-    image: "/images/mobile_dev_new.png",
+    image: "/web_porto/images/mobile_dev_new.png",
     href: "/services",
   },
 ];
